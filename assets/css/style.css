@@ -1,0 +1,57 @@
+#sticky {
+    width: 7px;
+    height: 100px;
+    background-color:brown;
+    display: inline-block;
+    position: absolute;
+    z-index: 9999;
+    top: 300px;
+}
+#sticky.hit:after {
+    display: block;
+    content: '*THUNK!*';
+    width: 100px;
+    height: 40px;
+    color: #f00;
+    margin: 15px;
+}
+
+#level-1 {
+    background-color: lightblue;
+    width: 100%;
+    height: 600px;
+}
+
+.grass {
+    background-color: green;
+    width: 100%;
+    height: 200px;
+    top: 400px;
+    display: block;
+    position: absolute;
+}
+.tree {
+    width: 101px;
+    height: 400px;
+    background-color: #400000;
+    position: absolute;
+}
+.apple {
+    width: 27px;
+    height: 28px;
+    background-color: red;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+} 
+.grannysmith {
+    background-color: green;
+}
+.goldendelicious {
+    background-color: yellow;
+}
+#timer {
+    position: absolute;
+    right: 5%;
+
+}
