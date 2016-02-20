@@ -2,7 +2,7 @@ $(document).ready( function() {
     // this is called an "object
     // It is how we program sticky to do things
     // Objects make it easier to tell things what to do in games
-    var time = 6;
+    var time = 60;
     var timer = function() {
       
         time--;
@@ -60,8 +60,10 @@ $(document).ready( function() {
     tree.initiate();
 	$(document).keypress( function(event) {
         event.preventDefault();
+        if ( time == 0 ) return;
+        
         var keys = event.which;
-        //$('#messages').text( event.which );
+        $('#messages').text( event.which );
         switch (keys) {
             case 100:
             //$('#sticky').animate({'left': 400});
